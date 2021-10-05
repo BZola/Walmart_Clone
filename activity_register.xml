@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/logoDescription"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/registerMessage"
+        android:textColor="#121212"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_firstNameText"
+            style="@style/formStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/firstNameInput" />
+
+        <EditText
+            android:id="@+id/register_firstNameInput"
+            style="@style/insideBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/noHint"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/register_lastNameText"
+            style="@style/formStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lastNameInput" />
+
+        <EditText
+            android:id="@+id/register_lastNameInput"
+            style="@style/insideBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/noHint"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/register_emailText"
+            style="@style/formStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emailInput" />
+
+        <EditText
+            android:id="@+id/register_emailInput"
+            style="@style/insideBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/noHint"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/register_passwordText"
+            style="@style/formStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passwordInput" />
+
+        <EditText
+            android:id="@+id/register_passwordInput"
+            style="@style/insideBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/noHint"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/createBtn"
+            android:layout_marginTop="5dp"
+            android:background="#094DB3"
+            android:textColor="#FFFFFF"
+            style="@style/insideBox"/>
+
+        <Button
+            android:id="@+id/logInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loginMessage"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:textColor="#094DB3"
+            style="@style/insideBox"/>
+
+    </LinearLayout>
+
+</LinearLayout>
